@@ -10,4 +10,18 @@ lista=['a','b','c','d']
 for letra in lista:
     numero_letra=lista.index(letra)+1 
     print(f"Letra {numero_letra}: {letra}")
-    
+
+autos=['ferrari','ford','fiat','VW','renault']
+for auto in autos:
+    if auto.startswith('f'):
+        print(f"auto que parte con f:{auto}")
+    else:
+        print(f"auto que no parte con f: {auto}")   
+
+
+n=[1,2,3,4,5]
+mi_valor=0
+for n1 in n:
+    mi_valor=mi_valor+n1
+    print(mi_valor)# aca me sale un valor cada loop
+print(mi_valor)    # aca me sale un valor en total
