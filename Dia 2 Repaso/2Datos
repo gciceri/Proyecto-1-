@@ -1,0 +1,5 @@
+#cualquier texto es un string y se pone con ""
+#cualquier numero es un integer (int) 150 , 1 , 555, cualquiera que sea entero
+#floating( float) es un numero decimal
+#listas se ponen en ["sal, 1, -2, 4.5, "parlante"] la lista va del 0 al infinito
+#palabra sal es el numero 0 de la lista
