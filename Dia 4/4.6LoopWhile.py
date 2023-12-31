@@ -12,3 +12,5 @@ while respuesta == 's':
     respuesta= input('quieres seguir? (S/N)')
 else: print('gracias')
 
+
+

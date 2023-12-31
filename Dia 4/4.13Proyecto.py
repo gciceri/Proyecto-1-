@@ -17,4 +17,4 @@ if numero>numero_usuario:
 if numero<numero_usuario:
     print("tu numero esta mas abao")
 if numero >100  :
-    print("estas fuera del rango")       # esta algo mal     
+    print("estas fuera del rango")       # esta algo mal    
