@@ -9,7 +9,7 @@ print(resultado)
 def chequear_3_cifras(lista):
     for n in lista:
         if n in range(100,1000):
-            return true 
+            return True 
         else:
             pass
 
