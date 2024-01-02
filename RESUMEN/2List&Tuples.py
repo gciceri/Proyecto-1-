@@ -108,6 +108,33 @@ strike3=29
 # tambien puedo poner
 strike1,strike2,strike3=10,15,29
 print(strike1)
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#Diccionarios
+alumnos={
+"Nicolas":[11,"azul","administracion"],
+"Giancarlo":[25,"azul","finanza"],
+"Paolo":[50,"amarillo","publicidad"],
+"Luis":[23,"negro", "adm"],}
+print(alumnos)
+#para sacar un elemento del diccionario pongo del 
+del alumnos["Luis"]
+print(alumnos)
+#para agregar pongo alumnos["Luis"]=[]
+alumnos["Guillermo"]=[21,"cafe","pulicidad"]
+print(alumnos)
+
+#DENTRO DE UN DICCIONARIO
+print(alumnos.keys())
+print(alumnos.items())
+
+vocales={"a","e","i","o","u"}
+p1={"a","w","d","e"}
+print(vocales&p1) # & interseccion , que tienen entre los 2
+print(vocales|p1) #unir elementos 
+print(vocales-p1) # elementos en vocales no presentes en P1
+print(vocales^p1) # elementos en A o B pero que no estan en los 2
+
 
 
 
