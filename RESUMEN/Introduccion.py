@@ -82,3 +82,7 @@ en tres tristes trastos de trigo."""
 # eliminar todas las r y s del string
 
 print(trabalenguas.replace("r","").replace("s",""))
+
+a=input("pon tu nombre")
+b=int(input("pon tu edad"))
+print(f'{a}\n'*b)
