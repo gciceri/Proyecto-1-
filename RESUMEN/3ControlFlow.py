@@ -78,10 +78,11 @@ if inicio in user_pass:
     print("Usuario Registrado")
 else:
     opciones_registro=input("Su usuario no esta registrado, Desea Incribir? S/N: ")
-    if opciones_registro=="S" or "s":
+    if opciones_registro=="S" or opciones_registro=="s":
            contrasena=input('Escriba su contrasena: ')
            user_pass[inicio]=contrasena
            print("Ha sido registrado exitosamente")
+           
     elif opciones_registro!= "S" or opciones_registro!="N":
         print("Respuesta no valida, Saliendo del programa") 
     elif opciones_registro == "N":
