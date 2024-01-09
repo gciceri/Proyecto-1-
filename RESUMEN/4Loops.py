@@ -75,11 +75,35 @@ print("\nEercicio 3 ")
 
 y=1
 while y<=5:
-    print(y,end="\n")
-    y=y+1
-    
+    print(y,end=" ")
+    y+=1
+    print()
     
 
+# Número de filas para el patrón
+num_filas = 5
+
+# Inicializar la variable de control del bucle externo
+fila_actual = 1
+
+# Bucle externo (while) para iterar sobre las filas
+while fila_actual <= num_filas:
+    # Inicializar la variable de control del bucle interno
+    numero_actual = 1
+    
+    # Bucle interno (while) para iterar sobre los números en cada fila
+    while numero_actual <= fila_actual:
+        print(numero_actual, end=' ')
+        numero_actual += 1
+    
+    # Salto de línea después de imprimir una fila completa
+    print()
+    
+    # Incrementar la variable de control del bucle externo
+    fila_actual += 1
+
+for numero in range(1,6):
+    print(numero)
 
 
 
