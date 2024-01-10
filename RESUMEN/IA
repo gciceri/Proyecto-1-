@@ -1,26 +1,9 @@
-
-# lista={"Giancarlo":24,
-#        "Tomas":22}
-# usuario=input("escribe tu nombre ")
-# if usuario  in lista:
-#     print("Esta registrado")
-
-# else:
-#     registro=input("no esta registrado, desea registrar? S/N: ")
-#     if registro == "s" or registro == 's':
-#         contrasena=input("escriba la contrasena ")
-#         print("Gracias por registrar")
-#     elif registro != "s" or registro!= "S":
-#         print("saliendo del sistema")    
-#     lista[registro]=contrasena  
-# print(lista)
-        
-
-buscar=3 
-for numero in range(5):
-
-    print(numero)
-    if numero == buscar:
-        print('encontrado', buscar)   
-        break
-    
+n=int(input("Escribe un numero: "))
+if n%2 != 0:
+        print("Weird")
+elif n%2 == 0 and n in range(2,6):
+        print("Not Weird")
+elif n%2 ==0 and n in range(6,21):
+        print("Weird")
+else:
+        print("Not Weird")

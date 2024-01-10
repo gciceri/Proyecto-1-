@@ -1,14 +1,8 @@
-#loop 
-#es cuando tenemos un bloque de codigos que queremos repetir un numero finito de veces 
-#eemplo , queremos calcular el area de: a=pi*r^2, de numero n de circulos
-# dada la lista de radios
-radios=[1,3,5,2,1,10]
+from random import *
+#LOOPS
+
+radios = [1, 3, 5, 2, 1, 10]
 pi=3.14159265
-# se se puede hacer esto copiando cada radio con pi pero nos podemos equipocar, entonces
-# USAMOS FOR 
-for radio in radios:
-    print(pi*radio**2)
-print("son todos los elementos") 
 
 for radio in radios:
     print(pi*radio**2)
@@ -102,8 +96,18 @@ while fila_actual <= num_filas:
     # Incrementar la variable de control del bucle externo
     fila_actual += 1
 
-for numero in range(1,6):
-    print(numero)
+numero=randint(1,10)
+while True:
+    input_num=int(input("Elige un numero del 1 al 100: "))
+    if input_num == numero:
+       print("adivinaste")
+    elif input_num<numero:
+       print("el numero es mayor")
+    elif input_num>numero:
+       print("el numero es menor")
+       break
+print("Adivinanste!")    
+               
 
 
 
