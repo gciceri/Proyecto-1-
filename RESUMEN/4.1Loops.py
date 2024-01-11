@@ -64,13 +64,15 @@ for radio2 in radios1:
 print("\n\n")
 #eercicio 2 
 
-print("Eercicio 2")
+print("eercicio 2\n")
+
 for fila in range(1,6):
     for columna in range(1,fila+1):
         print(columna,end=" ")
-    print("\n")     
+    print(" ") # lo pongo aca porque cuando termina la primera fila, pasa a la segunda , si lo pongo bao el print 
+               #cada vez que me entrega un numero se pone uno abao 
+        
 
-print("eecicio 3\n")
 
 # numero=randint(1,10)
 # while True:
@@ -84,25 +86,46 @@ print("eecicio 3\n")
 #        break
 # print("Adivinanste!\n\n") 
 
-print("eercico 4")
+# print("eercico 4")
+# capitales = ['Aguascalientes', 'Mexicali', 'La Paz', 'Campeche', 'Saltillo', 'Colima',
+#              'Tuxtla Gutiérrez', 'Chihuahua', 'Ciudad de México', 'Durango', 'Guanajuato',
+#              'Chilpancingo', 'Pachuca', 'Guadalajara', 'Toluca', 'Morelia', 'Cuernavaca', 
+#              'Tepic', 'Monterrey', 'Oaxaca', 'Puebla', 'Querétaro', 'Chetumal', 'San Luis Potosí',
+#              'Culiacán', 'Hermosillo', 'Villahermosa', 'Ciudad Victoria', 'Tlaxcala', 'Xalapa',
+#              'Mérida', 'Zacatecas']
+# estados = ['Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'Coahuila',
+#            'Colima', 'Chiapas', 'Chihuahua', 'Distrito Federal', 'Durango', 'Guanajuato',
+#            'Guerrero', 'Hidalgo', 'Jalisco', 'México', 'Michoacán', 'Morelos', 'Nayarit',
+#            'Nuevo León', 'Oaxaca', 'Puebla', 'Querétaro', 'Quintana Roo', 'San Luis Potosí',
+#            'Sinaloa', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas']
 
-capitales = ['Aguascalientes', 'Mexicali', 'La Paz', 'Campeche', 'Saltillo', 'Colima',
-             'Tuxtla Gutiérrez', 'Chihuahua', 'Ciudad de México', 'Durango', 'Guanajuato',
-             'Chilpancingo', 'Pachuca', 'Guadalajara', 'Toluca', 'Morelia', 'Cuernavaca', 
-             'Tepic', 'Monterrey', 'Oaxaca', 'Puebla', 'Querétaro', 'Chetumal', 'San Luis Potosí',
-             'Culiacán', 'Hermosillo', 'Villahermosa', 'Ciudad Victoria', 'Tlaxcala', 'Xalapa',
-             'Mérida', 'Zacatecas']
-estados = ['Aguascalientes', 'Baja California', 'Baja California Sur', 'Campeche', 'Coahuila',
-           'Colima', 'Chiapas', 'Chihuahua', 'Distrito Federal', 'Durango', 'Guanajuato',
-           'Guerrero', 'Hidalgo', 'Jalisco', 'México', 'Michoacán', 'Morelos', 'Nayarit',
-           'Nuevo León', 'Oaxaca', 'Puebla', 'Querétaro', 'Quintana Roo', 'San Luis Potosí',
-           'Sinaloa', 'Sonora', 'Tabasco', 'Tamaulipas', 'Tlaxcala', 'Veracruz', 'Yucatán', 'Zacatecas']
+# agrupar={}
+# for capital,estado in zip(capitales,estados):
+#     agrupar[capital]=estado
+#     print(f"la capital de {estado} es {capital}")
+print("\neercicio 5")
 
-agrupar={}
-for capital,estado in zip(capitales,estados):
-    agrupar[capital]=estado
-    print(f"la capital de {capital} ,{estado}")
-print("\n\n\nEercicio5")
+#eercicio5 
+
+for fila in range(1,11):
+    for columna in range(1,11):
+        print(fila*columna,end=" ")
+        if columna==1:
+            print("|",end=" ")
+        
+    print("")    
+      
+      
+            
+       
+
+
+    
+    
+
+
+
+
                
 
 
