@@ -101,12 +101,16 @@ while True:
     input_num=int(input("Elige un numero del 1 al 100: "))
     if input_num == numero:
        print("adivinaste")
+       break
     elif input_num<numero:
        print("el numero es mayor")
     elif input_num>numero:
        print("el numero es menor")
-       break
-print("Adivinanste!")    
+       
+print("Adivinanste!")  
+
+
+
                
                
 

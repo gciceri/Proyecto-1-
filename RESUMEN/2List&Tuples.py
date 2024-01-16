@@ -53,7 +53,7 @@ cientificos3[0]="Giancarlo"
 print("Lista 'Cientificos 3\n", cientificos3) ; print("Lista 'Cientificos\n'", cientificos)
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
+print("metodo List")
 #Metodo de un list 
 lista2=['a','b','c','d']
 print(lista2)

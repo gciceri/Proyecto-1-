@@ -1,9 +1,17 @@
-n=int(input("Escribe un numero: "))
-if n%2 != 0:
-        print("Weird")
-elif n%2 == 0 and n in range(2,6):
-        print("Not Weird")
-elif n%2 ==0 and n in range(6,21):
-        print("Weird")
-else:
-        print("Not Weird")
+from ipywidgets import interact, FloatSlider, Dropdown
+import matplotlib.pyplot as plt
+
+def graph_option(k, rate, sigma, ttm):
+    Ft = [i for i in range(10, 50, 1)]
+    prices = [graph_option(F, k, rate, sigma, ttm) for F in Ft]
+    plt.figure(figsize=(13,8))
+    plt.plot(Ft, prices)
+    plt.xlabel("$F(t)$")
+    plt.ylabel("$C(t)$")
+    plt.ylim(-0.5, 25); plt.xlim(10, 50)
+    plt.show()
+    interact(graph_option,
+         k=FloatSlider(min=10, max=50, step=1, value=20),
+         rate=FloatSlider(min=0.01, max=0.2, step=0.01, value=0.06),
+         sigma=FloatSlider(min=0.01, max=0.8, step=0.1, value=0.23),
+         ttm=FloatSlider(min=0.01, max=2, step=0.1, value=30/365))
