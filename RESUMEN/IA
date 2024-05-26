@@ -1,17 +1,18 @@
-from ipywidgets import interact, FloatSlider, Dropdown
-import matplotlib.pyplot as plt
+from PIL import Image
+import pytesseract
 
-def graph_option(k, rate, sigma, ttm):
-    Ft = [i for i in range(10, 50, 1)]
-    prices = [graph_option(F, k, rate, sigma, ttm) for F in Ft]
-    plt.figure(figsize=(13,8))
-    plt.plot(Ft, prices)
-    plt.xlabel("$F(t)$")
-    plt.ylabel("$C(t)$")
-    plt.ylim(-0.5, 25); plt.xlim(10, 50)
-    plt.show()
-    interact(graph_option,
-         k=FloatSlider(min=10, max=50, step=1, value=20),
-         rate=FloatSlider(min=0.01, max=0.2, step=0.01, value=0.06),
-         sigma=FloatSlider(min=0.01, max=0.8, step=0.1, value=0.23),
-         ttm=FloatSlider(min=0.01, max=2, step=0.1, value=30/365))
+# Configura la ruta al ejecutable de Tesseract (cambia esta ruta según tu instalación)
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+def ocr(image_path):
+    # Abre la imagen con Pillow
+    img = Image.open(image_path)
+
+    # Utiliza pytesseract para extraer el texto de la imagen
+    text = pytesseract.image_to_string(img)
+
+    return text
+
+# Proporciona la ruta local del archivo en tu sistema (asegúrate de que la imagen exista en esa ubicación)
+result = ocr(r'C:\Users\Giancarlo Ciceri\Desktop\descarga.jpg')
+print(result)

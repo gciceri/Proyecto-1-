@@ -62,6 +62,18 @@ def paridad(s,k,T):
 print(paridad(60,65,0.25))
 
 
+def hello(to="alguien"):
+    print(f"(hello,{to})")
 
+name=input("whats your name")
+hello(name)    
 
+def main():
+    x=int(input("escribe el numero "))
+    print(f"el cuadrado de {x} es",square(x) )
+
+def square(n):
+    return n**2
+
+main()
 

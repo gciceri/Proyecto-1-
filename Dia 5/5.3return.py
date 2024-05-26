@@ -9,3 +9,22 @@ def multiplicar (num3,num4):
 
 resultado=multiplicar(10,2)
 print(resultado)
+
+#practica
+#crear funcion llamada usd_eur
+
+def uds_a_eur(dolares):
+    euros=dolares*0.9
+    return euros
+a=uds_a_eur(90)
+print(a)
+ 
+
+#crear funcion para invertir palabran
+def invertir_palabra(palabra):
+    
+    return (palabra[::-1].upper())
+
+print(invertir_palabra("hola"))
+
+    

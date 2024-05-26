@@ -4,7 +4,7 @@
 # !=: Diferencia
 # not: Negación
 # and: y
-# or: o
+# or: od
 
 my_str="The Tipping Point"
 print(my_str.endswith("boolean"))#False

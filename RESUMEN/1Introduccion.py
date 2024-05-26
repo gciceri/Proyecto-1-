@@ -86,3 +86,7 @@ print(trabalenguas.replace("r","").replace("s",""))
 a=input("pon tu nombre")
 b=int(input("pon tu edad"))
 print(f'{a}\n'*b)
+
+name=input("escribe tu nombre: ").strip()
+first,last=name.split(" ")
+print(last)

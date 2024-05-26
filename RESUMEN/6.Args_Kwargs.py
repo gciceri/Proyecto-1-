@@ -16,6 +16,4 @@ def lista(nombre,*comida):
 
 lista("giancarlo","arroz","pollo")
 
-name=input("escribe tu nombre: ").strip()
-first,last=name.split(" ")
-print(last)
+ 
